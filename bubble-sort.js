@@ -9,6 +9,13 @@ function bubbleSort(array) {
     ** cycle without needing any swaps
     */
 
+    let arr = array;
+    let swaps;
+    while(swaps != 0){
+        
+    }
+
+
 	return array;
 }
 
