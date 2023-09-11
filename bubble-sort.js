@@ -10,13 +10,34 @@ function bubbleSort(array) {
     */
 
     let arr = array;
-    let swaps;
-    while(swaps != 0){
+    console.log(arr);
+    let sorted = false;
+    if(arr.length > 0){
+        while(!sorted){
+            
+            for(let i=0; i < arr.length; i++){
+                if(arr[i] > arr[i+1]){
+                    console.log("sorting");
+                    let x = arr[i];
+                    let y = arr[i+1];
+                    arr[i+1] = x;
+                    arr[i] = y;
+                    sorted = false;
+                    break;
+                }else{
+                    console.log("good");
+                    sorted = true;
+                }
+            }
+        }
         
+    }else{
+        sorted = true;
     }
-
-
-	return array;
+	return arr;
 }
 
 module.exports = bubbleSort;
+
+//console.log("Testing array: " + bubbleSort([5, 1, 3, 7, 10, 2, 25, 2, 1]))
+console.log("Testing array: " + bubbleSort([]));
