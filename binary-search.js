@@ -45,7 +45,7 @@ function binarySearch(array, searchTerm) {
 				searchTermPos = splitPoint;
 			}
 		}
-	console.log("array: " + array);
+	//console.log("array: " + array);
 	return searchTermPos;
 }
 
