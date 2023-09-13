@@ -4,7 +4,6 @@ function insertionSort(array) {
 	 ** before it over and over as long as the element before it
 	 ** is bigger
 	 */
-	let sorted = false;
 	if(array.length > 0){
 		for(let j=0; j < array.length; j++){
 			for(let i=0; i < array.length; i++){
@@ -21,11 +20,7 @@ function insertionSort(array) {
 				}
 			}
 		}
-	}else{
-		sorted = true;
 	}
-
-
 	return array;
 }
 
