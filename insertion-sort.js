@@ -9,14 +9,11 @@ function insertionSort(array) {
 			for(let i=0; i < array.length; i++){
 				let currentValue = array.length-1-i;
 				if(array[currentValue] < array[currentValue-1]){
-					//console.log("swapping");
 					let x = array[currentValue];
 					let y = array[currentValue-1];
 					array[currentValue-1] = x;
 					array[currentValue] = y;
-					//console.log(array);
 				}else{
-					//console.log("in position");
 				}
 			}
 		}
@@ -25,5 +22,3 @@ function insertionSort(array) {
 }
 
 module.exports = insertionSort;
-
-//console.log("testing array: " + insertionSort([2, 4, 1, 9]));

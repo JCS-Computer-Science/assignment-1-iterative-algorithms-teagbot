@@ -12,14 +12,9 @@ function selectionSort(array) {
 	 for(let i=0; i < array.length; i++){
 		smallestValue = i;
 		for(let j=1; j < array.length; j++){
-			//console.log("was: " + array[smallestValue])
 			if(array[smallestValue] > array[i+j]){
-				//console.log("new value found")
 				smallestValue = i+j;
-			}else{
-				//console.log("no new value");
 			}
-			//console.log("changed to: " + array[smallestValue])
 		}
 		let x = array[smallestValue];
 		let y = array[i];
@@ -31,5 +26,3 @@ function selectionSort(array) {
 }
 
 module.exports = selectionSort;
-
-//console.log("seperate testing: " + selectionSort([2, 1, 9, 5, 1, 6, 10, 12, 1, 74]))
